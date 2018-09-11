@@ -7,12 +7,13 @@
 		<meta name="author" content="Ruth Sanchez">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Coder Duckies Cookbook - Home</title>
-		
+		<link rel="stylesheet" href="stylesheet.css" type="text/css" />
 	</head>
 	<body>
+		<a href="form.php">Form</a><br>
 		<?php
-			$name = "Ruth";
-			echo "hello, " $name;
+			$name = "World";
+			echo "hello, $name";
 		?>
 	</body>
 </html>
