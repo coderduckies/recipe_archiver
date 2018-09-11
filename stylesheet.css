@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Baloo+Tammudu|Domine');
+/*
+font-family: 'Baloo Tammudu', cursive;
+font-family: 'Domine', serif;
+font-family: 'Assistant', sans-serif;
+*/
+
+
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=312020khCtW7KNJcSBTlGpEpwlk */
+
+/* Feel free to copy&paste color codes to your application */
+
+
+/* As hex codes */
+
+.color-primary-0 { color: #EFC76B }	/* Main Primary color */
+.color-primary-1 { color: #FFEDC1 }
+.color-primary-2 { color: #FFE098 }
+.color-primary-3 { color: #CCA342 }
+.color-primary-4 { color: #AA8122 }
+
+.color-secondary-1-0 { color: #565EA5 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #B0B4DE }
+.color-secondary-1-2 { color: #7E84C1 }
+.color-secondary-1-3 { color: #3A428D }
+.color-secondary-1-4 { color: #242C75 }
+
+.color-secondary-2-0 { color: #5168A0 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #ADBADC }
+.color-secondary-2-2 { color: #798DBD }
+.color-secondary-2-3 { color: #364E89 }
+.color-secondary-2-4 { color: #213872 }
+:root{
+    
+}
+html,body{
+    
+}
+form{
+    
+}
