@@ -33,10 +33,15 @@ font-family: 'Assistant', sans-serif;
 .color-secondary-2-3 { color: #364E89 }
 .color-secondary-2-4 { color: #213872 }
 :root{
-    
+    --main-color:#EFC76B;
+    --secondary-color:#CCA342;
+    --accent-color:#7E84C1;
 }
 html,body{
-    
+    margin:0;
+    display:grid;
+    grid-template-columns:;
+    background-color: white;
 }
 form{
     
