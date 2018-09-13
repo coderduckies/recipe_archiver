@@ -36,13 +36,66 @@ font-family: 'Assistant', sans-serif;
     --main-color:#EFC76B;
     --secondary-color:#CCA342;
     --accent-color:#7E84C1;
+    
+    --dot-size:60px;
+    --dot-pos:calc(var(--dot-size)/2);
+    --dot-image:radial-gradient(var(--main-color) 30%, transparent 0);
+    --dot-image:url("rubberduckicon.png");
 }
+
 html,body{
+    height:100vh;
     margin:0;
-    display:grid;
-    grid-template-columns:;
-    background-color: white;
 }
+body{
+    
+    /*
+    Using a few vars
+    background-image: radial-gradient(var(--main-color) 30%, transparent 0),radial-gradient(var(--main-color) 30%, transparent 0);
+    background-size: var(--dot-size) var(--dot-size);
+    background-position: 0 0, calc(var(--dot-size)/2) calc(var(--dot-size)/2) ;*/
+    
+    /*Using all the vars*/
+    background-image: var(--dot-image), var(--dot-image);
+    background-size: var(--dot-size) var(--dot-size);
+    background-position: 0 0, var(--dot-pos) var(--dot-pos);
+    
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows:repeat(6, 1fr);
+}
+
+
 form{
+    grid-column:2/span 3;
+    grid-row:2/ span 3;
+    
+    max-width: 50vw;
+    min-width: 300px;
+    border:3px black solid;
+    background-image: none;
+    
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows:repeat(5, 1fr);
+    
+}
+
+header{
+    background-color: var(--secondary-color);
+    color:white;
+    margin:0;
+    
+    grid-column:span 5;
+    grid-rows:span 1;
+    
+    display:grid;
+    
+    
+}
+.logo-img{
+    max-width: 50px;
+    max-height:50px;
+    
     
 }
