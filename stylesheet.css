@@ -5,37 +5,10 @@ font-family: 'Domine', serif;
 font-family: 'Assistant', sans-serif;
 */
 
-
-/* CSS - Cascading Style Sheet */
-/* Palette color codes */
-/* Palette URL: http://paletton.com/#uid=312020khCtW7KNJcSBTlGpEpwlk */
-
-/* Feel free to copy&paste color codes to your application */
-
-
-/* As hex codes */
-
-.color-primary-0 { color: #EFC76B }	/* Main Primary color */
-.color-primary-1 { color: #FFEDC1 }
-.color-primary-2 { color: #FFE098 }
-.color-primary-3 { color: #CCA342 }
-.color-primary-4 { color: #AA8122 }
-
-.color-secondary-1-0 { color: #565EA5 }	/* Main Secondary color (1) */
-.color-secondary-1-1 { color: #B0B4DE }
-.color-secondary-1-2 { color: #7E84C1 }
-.color-secondary-1-3 { color: #3A428D }
-.color-secondary-1-4 { color: #242C75 }
-
-.color-secondary-2-0 { color: #5168A0 }	/* Main Secondary color (2) */
-.color-secondary-2-1 { color: #ADBADC }
-.color-secondary-2-2 { color: #798DBD }
-.color-secondary-2-3 { color: #364E89 }
-.color-secondary-2-4 { color: #213872 }
 :root{
-    --main-color:#EFC76B;
-    --secondary-color:#CCA342;
-    --accent-color:#7E84C1;
+    --main-color:#FFE734;
+    --secondary-color:#FFC234;
+    --accent-color:#**(BE6);
     
     --dot-size:60px;
     --dot-pos:calc(var(--dot-size)/2);
@@ -46,51 +19,54 @@ font-family: 'Assistant', sans-serif;
 html,body{
     height:100vh;
     margin:0;
+    font-family:;
 }
 body{
-    
-    /*
-    Using a few vars
-    background-image: radial-gradient(var(--main-color) 30%, transparent 0),radial-gradient(var(--main-color) 30%, transparent 0);
-    background-size: var(--dot-size) var(--dot-size);
-    background-position: 0 0, calc(var(--dot-size)/2) calc(var(--dot-size)/2) ;*/
-    
     /*Using all the vars*/
     background-image: var(--dot-image), var(--dot-image);
     background-size: var(--dot-size) var(--dot-size);
     background-position: 0 0, var(--dot-pos) var(--dot-pos);
     
     display:grid;
+    /*
     grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows:repeat(6, 1fr);
+    */
+    grid:
+        'header'
+        'form content'
+        'footer footer';
+    grid-gap:0;
 }
 
 
 form{
     grid-column:2/span 3;
-    grid-row:2/ span 3;
+    grid-row:3/ span 3;
     
     max-width: 50vw;
     min-width: 300px;
     border:3px black solid;
     background-image: none;
-    
+    /*
     display:grid;
     grid-template-columns: auto;
     grid-template-rows:repeat(5, 1fr);
-    
+    */
 }
 
 header{
     background-color: var(--secondary-color);
     color:white;
     margin:0;
-    
+    grid-area:header;
+    /*
     grid-column:span 5;
     grid-rows:span 1;
-    
+    */
     display:grid;
-    
+    grid-template-columns:20vw auto 20vw;
+    grid-template-rows:repeat(2, auto-fit);
     
 }
 .logo-img{
