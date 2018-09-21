@@ -10,10 +10,26 @@
 		<link rel="stylesheet" href="stylesheet.css" type="text/css" />
 	</head>
 	<body>
-		<?php
-			include('header.html');
-			include('form.html');
-			include('footer.html')
+		
+		<?php include('header.html'); ?>
+		<?php include('form.html'); 
+		
+			//declaring variables:
+			$recipeName = $_POST['recipe_name'];     //string
+			$ingredientsRaw = $_POST['ingredients']; //string
+			$stepsRaw = $_POST['steps'];             //string
+			
+			//how to you create the container and nest 
+			//the content into it?
+			
+			
+			//Name->heading
+			
+			//indredients->2 column table
+			
+			//steps->Ordered List
+			
 		?>
+		<?php include('footer.html'); ?>
 	</body>
 </html>
